@@ -11,6 +11,6 @@ spring:
         uri: lb://pup-user
         order: 8000
         predicates: 
-        - Path=/user/**
+        - Path=/pup/**
         filters:
         - StripPrefix=1
