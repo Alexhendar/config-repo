@@ -7,8 +7,8 @@ spring:
       default-filters:
       - AddResponseHeader=X-Response-Default-Foo, Default-Bar
       routes:
-      - id: service_to_user
-        uri: lb://user-service
+      - id: route_pup_user
+        uri: lb://pup-user
         order: 8000
         predicates: 
         - Path=/user/**
